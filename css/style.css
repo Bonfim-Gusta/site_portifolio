@@ -1,0 +1,666 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Cores:
+azul - #00ffff
+vermelho - #ff0000
+rosa - #ff00ff
+
+*/
+
+html{
+    
+}
+
+
+#rodape{
+    display: block;
+}
+
+body{
+    background: #140224 url(../imagens/sobre_mim_bg.jpg) center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #eedfdf;
+}
+
+#sombra{
+    background: linear-gradient(rgba(23, 21, 21, 0.633),rgba(23, 21, 21, 0.397), rgba(23, 21, 21, 0.022)) ;
+    background-attachment: fixed;
+}
+
+body#home{
+    overflow-y: hidden;
+}
+
+.texto-preto{
+    color: rgb(39, 36, 36);
+}
+
+/*Area do header*/
+
+header #menu-horizontal ul li a:hover,
+body#home .ativo,
+body#sobre-mim .ativo,
+body#projetos .ativo,
+body#competencias .ativo,
+body#consideracoes .ativo{
+    color: #00ffff;
+    border-bottom: 1px solid #00ffff;
+}
+
+header #menu-horizontal ul li a:hover{
+    border-bottom: none;
+}
+
+header #menu-horizontal ul li{
+    padding-right: 0px;
+    margin-right: 3px;
+}
+h1{
+    color: #00ffff;
+    text-shadow: 2px 2px #ff00ff;
+    /*
+    background: -webkit-linear-gradient(#ff0000,#ff0000, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+}
+
+p{
+    color: #fff;
+    text-align: justify;
+}
+
+header a{
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    background-color: #10011dd3;
+    border-bottom: 1px solid #00ffff;
+}
+
+.navbar{
+    padding: 10px 0px;
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section#navegacao{
+    width: 100%;
+    margin: 0px;
+}
+
+section#navegacao #menu-horizontal{
+    padding: 5px 5px;
+    line-height: 45px;
+}
+
+
+.alinha-apresentacao{
+    margin: 18.5px 0px;
+}
+
+.animação-maquina{
+    animation: maquina 500ms infinite normal, digitando 4s steps(40) 1s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes digitando {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 81%;
+    }
+}
+
+@keyframes maquina {
+    0%{
+        border-right: 1px solid rgba(255, 255, 255, 0.942);
+    }
+    100%{
+        border-right-color: transparent;
+    }
+}
+
+.foto-header{
+    animation: foto_header 3s linear infinite;
+}
+
+.redes-sociais{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.redes-sociais a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.redes-sociais h5{
+    margin-bottom: 0px;
+}
+
+.redes-sociais a.instagram:hover{
+    background: -webkit-linear-gradient(#6400bb, #ea8b2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.redes-sociais a.whatsapp:hover{
+    color: #19ce1c;
+}
+
+.redes-sociais a.github:hover{
+    color: #171515;
+}
+
+.redes-sociais a.linkedin:hover{
+    color: #0e76a8;
+}
+
+.instagram i,
+.whatsapp i,
+.github i,
+.linkedin i{
+    font-size: 30px;
+}
+
+section#conteudos{
+    margin: 40px 0px;
+}
+
+section#conteudos p{
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+footer{
+    line-height: 60px;
+    border-top: 1px solid #00ffff;
+}
+
+/*Animações index*/
+
+@keyframes foto_header {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+/*Sobre mim*/
+
+section#sobre-mim{
+    padding: 10px 0px;
+}
+
+section#sobre-mim a{
+    color: #ff00ff;
+}
+
+section#sobre-mim p{
+    text-align: justify;
+    margin-top: 23px;
+}
+
+.laptop{
+    animation: entrada_laptop 3s ease-in-out both;
+}
+
+.texto-sobre-mim{
+    animation: texto_sobre_mim 3s ease-in-out both;
+}
+
+@keyframes entrada_laptop{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes texto_sobre_mim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Competencias*/
+
+section#competencias h1{
+    text-align: center;
+}
+
+.alinha-logos{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.alinha-textos{
+    text-align: center;
+}
+
+span.carregando{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+.html5{
+    animation: entrada_competencias 1.5s linear;
+}
+
+.css3{
+    animation: entrada_competencias 1.25s linear;
+}
+
+.js{
+    animation: entrada_competencias 1s linear;
+}
+
+.bootstrap{
+    animation: entrada_competencias 0.75s linear;
+}
+
+.react{
+    animation: entrada_competencias_react 2.5s linear;
+
+}
+
+@keyframes entrada_competencias {
+    0%{
+        transform: translateX(-1000px);
+    }
+}
+
+@keyframes entrada_competencias_react {
+    0%{
+        transform: translateX(-2000px);
+    }
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*Projetos*/
+
+.borda-projetos{
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+}
+
+section.projetos h3{
+    text-decoration: underline;
+}
+
+section.projetos{
+    border-bottom: 1px solid #00ffff;
+}
+
+.projetos-alterna{
+    background-color: rgba(11, 5, 18, 0.596);
+}
+
+.padding-projetos{
+    padding: 50px;
+}
+
+.hidden{
+    opacity: 0;
+    transform: scaleY(0%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: scaleY(100%);
+    transition: transform 1.5s, opacity 3s;
+}
+
+#projeto-3 .btn-outline-light{
+    color: #aa1e5d;
+    border-color: #aa1e5d;
+}
+
+#projeto-3 .btn-outline-light:hover{
+    color: white;
+    background-color: #aa1e5d;
+}
+
+
+/*Consideracoes*/
+
+body#consideracoes{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body#consideracoes>#sombra>section{
+    margin: 3% 0px;
+}
+
+body#consideracoes h6{
+    margin-bottom: 10px;
+}
+
+.botoes_consideracoes{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    section#navegacao #menu-horizontal{
+        border-bottom: none;
+    }
+
+    section#navegacao #menu-horizontal .menu-opcoes{
+        width: 100%;
+        height: auto;
+    }
+
+    header ul li a:hover{
+        border-bottom: none;
+    }
+
+    p{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .redes-sociais{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 140%;
+        margin-top: 10px;
+    }
+
+    @keyframes digitando {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+    
+
+    p{
+        text-align: justify;
+    }
+
+    button{
+        margin-top: 5px;
+    }
+
+    .btn-outline-danger{
+        margin-left: 10px;
+    }
+
+    body#home .ativo,
+    body#sobre-mim .ativo,
+    body#projetos .ativo,
+    body#competencias .ativo{
+        border-bottom: none;
+    }
+
+    .botoes_consideracoes{
+        width: 100%;
+    }
+
+    .html5{
+        animation: entrada_competencias 0.75s linear;
+    }
+    
+    .css3{
+        animation: entrada_competencias 1s linear;
+    }
+    
+    .js{
+        animation: entrada_competencias 1.25s linear;
+    }
+    
+    .bootstrap{
+        animation: entrada_competencias 1.5s linear;
+    }
+    
+    .react{
+        animation: entrada_competencias_react 1.75s linear;
+    
+    }
+
+    body#home #minha-apresentacao{
+        margin-top: 30%;
+        margin-bottom: 50%;
+    }
+
+
+
+    body#consideracoes>section{
+        margin-top: 100px;
+        margin-bottom: 136px;
+    }
+
+    .padding-projetos{
+        padding: 20px 50px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    section#navegacao #menu-horizontal{
+        border-bottom: none;
+    }
+
+    section#navegacao #menu-horizontal .menu-opcoes{
+        width: 100%;
+    }
+
+    header ul li a:hover{
+        border-bottom: none;
+    }
+
+    body#home .ativo,
+    body#sobre-mim .ativo,
+    body#projetos .ativo,
+    body#competencias .ativo{
+        border-bottom: none;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    p{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .redes-sociais{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    @keyframes digitando {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+
+    .padding-projetos{
+        padding: 20px 50px;
+    }
+
+    .botoes_consideracoes{
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 48px;
+    }
+
+    .redes-sociais{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    @keyframes digitando {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+
+    section#navegacao #menu-horizontal .menu-opcoes{
+        width: 100%;
+    }
+
+    body#home .ativo,
+    body#sobre-mim .ativo,
+    body#projetos .ativo,
+    body#competencias .ativo,
+    body#consideracoes .ativo{
+        border-bottom: none;
+    }
+
+    body#consideracoes>section{
+        margin: 16px 0px;
+    }
+
+    .botoes_consideracoes{
+        width: 80%;
+    }
+
+    footer{
+        position: fixed bottom;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 46px;
+    }
+
+    @keyframes digitando {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+
+    body#consideracoes>section{
+        margin: 48px 0px;
+    }    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1{
+        font-size: 56px;
+    }
+
+    @keyframes digitando {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+@media (min-height: 1200px)
+{
+    body#home #minha-apresentacao
+    {
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        width: 100px;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    p{
+        font-size: 30px;
+    }
+
+    h5{
+        font-size: 60px;
+    }
+
+    .redes-sociais{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .instagram i,
+    .whatsapp i,
+    .github i,
+    .linkedin i{
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+    
+}

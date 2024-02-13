@@ -1,4 +1,5 @@
 var tela = window.innerHeight
+var larguraTela = window.innerWidth
 console.log(tela)
 if (tela > 1000)
 {
@@ -29,4 +30,3 @@ const myObserver = new IntersectionObserver((entries) =>
  })
 
  myObserver.observe(botao)
-

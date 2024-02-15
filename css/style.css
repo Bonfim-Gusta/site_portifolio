@@ -250,6 +250,27 @@ section#competencias h1{
     text-align: center;
 }
 
+section#competencias i{
+    font-size: 75px;
+    transition: all 1s;
+}
+
+section#competencias i:hover{
+    font-size: 90px;
+    transition: all 0.5s;
+}
+
+section#competencias .react i{
+    font-size: 100px;
+    transition: all 1s;
+}
+
+section#competencias .react i:hover{
+    font-size: 115px;
+    transition: all 0.5s;
+}
+
+
 .alinha-logos{
     display: flex;
     justify-content: center;
@@ -274,23 +295,98 @@ span.carregando{
 
 .html5{
     animation: entrada_competencias 1.5s linear;
+    cursor: pointer;
+}
+
+.html5 i:hover{
+    color:#ff4d00;
+    text-shadow: white 2px 2px;
+}
+
+.html5:hover::after{
+    content: "HTML5 é a quinta e última versão do HTML, sigla de Hypertext Markup Language, uma das primeiras e principais linguagens de marcação da web. O HTML serve, basicamente, para o desenvolvimento de páginas que contenham conteúdos simples, como textos, imagens, áudio, vídeos e etc.";
 }
 
 .css3{
     animation: entrada_competencias 1.25s linear;
+    cursor: pointer;
+}
+
+.css3:hover::after{
+    content: "CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), onde se define estilos para seu projeto web.Com efeitos de transição, imagem,imagem de fundo/Background e outros, que dão um estilo novo e elegante a seus projetos web,";
+    right: 100px;
+}
+
+.css3 i:hover{
+    color: #4358e0;
+    text-shadow: white 2px 2px;
 }
 
 .js{
     animation: entrada_competencias 1s linear;
+    cursor: pointer;
+}
+
+.js:hover::after{
+    content: "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.";
+}
+
+.js i:hover{
+    color: #f3d409;
+    text-shadow: white 2px 2px;
 }
 
 .bootstrap{
     animation: entrada_competencias 0.75s linear;
+    cursor: pointer;
+}
+
+.bootstrap:hover::after{
+    content: "Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.";
+    right: 60px;
+}
+
+.bootstrap i:hover{
+    color: #411390;
+    text-shadow: white 2px 2px;
 }
 
 .react{
     animation: entrada_competencias_react 2.5s linear;
+    cursor: pointer;
+}
 
+.react:hover::after{
+    content: "React é um framework JavaScript criado pelo Facebook (atual Meta) que é usado para criar interfaces de usuário (UI) em aplicativos web. Ele é popular por ser fácil de usar, altamente flexível e escalável, e é usado por muitas empresas de tecnologia, incluindo o Facebook, Instagram e Airbnb.";
+
+    left: 250px;
+    bottom: 5px;
+}
+
+.react i:hover{
+    color: #43c1fc;
+    text-shadow: white 2px 2px;
+}
+
+.html5:hover::after,
+.css3:hover::after,
+.bootstrap:hover::after,
+.js:hover::after,
+.react:hover::after{
+    font-size: 12px;
+    width: 250px;
+    height: auto;
+    background-color: #14022bd3;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    text-align: justify;
+    border: 2px solid #00ffff;
+}
+
+section#competencias a{
+    color: white;
+    text-decoration: none;
 }
 
 @keyframes entrada_competencias {

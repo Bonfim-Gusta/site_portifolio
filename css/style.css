@@ -284,7 +284,6 @@ span.carregando{
 
 .html5{
     animation: entrada_competencias 1.5s linear;
-    cursor: pointer;
 }
 
 .html5 i:hover{
@@ -298,7 +297,6 @@ span.carregando{
 
 .css3{
     animation: entrada_competencias 1.25s linear;
-    cursor: pointer;
 }
 
 .css3:hover::after{
@@ -313,7 +311,6 @@ span.carregando{
 
 .js{
     animation: entrada_competencias 1s linear;
-    cursor: pointer;
 }
 
 .js:hover::after{
@@ -327,7 +324,6 @@ span.carregando{
 
 .bootstrap{
     animation: entrada_competencias 0.75s linear;
-    cursor: pointer;
 }
 
 .bootstrap:hover::after{
@@ -342,7 +338,6 @@ span.carregando{
 
 .react{
     animation: entrada_competencias_react 2.5s linear;
-    cursor: pointer;
 }
 
 .react:hover::after{
@@ -355,6 +350,14 @@ span.carregando{
 .react i:hover{
     color: #43c1fc;
     text-shadow: white 2px 2px;
+}
+
+.html5,
+.css3,
+.bootstrap,
+.js,
+.react{
+    cursor: pointer;
 }
 
 .html5:hover::after,

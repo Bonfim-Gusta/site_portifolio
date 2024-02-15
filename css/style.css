@@ -459,11 +459,6 @@ section.projetos{
 
 /*Consideracoes*/
 
-body#consideracoes{
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
 body#consideracoes>#sombra>section{
     margin: 3% 0px;
 }
